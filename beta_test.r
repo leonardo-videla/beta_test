@@ -59,7 +59,7 @@ cat("Tn from the data:", Tn_original, "\n")
 
 B <- 5000  
 Tn_bootstrap <- numeric(B)
-n <- 200
+n <- length(x)
 
 for (i in 1:B) {
 sample_beta <- rbeta(n, a, b)
